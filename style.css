@@ -1,8 +1,33 @@
+h1 {
+	font-family: 'Lucida Console', Monaco, monospace;
+	text-align: center;
+}
+
 #searchBar {
-  margin: 15px 10px;
+	margin: 15px 10px;
 }
 
 .tableWrapper {
-  max-height: 400px;
-  overflow: auto;
+	max-height: 400px;
+	overflow: auto;
+	position: right;
 }
+
+.jumbotron {
+	height: 400px;
+	width: 500px;
+	position: right;
+}
+
+.jumbotron p {
+	font-size: 16px;
+}
+
+#AddListingForm {
+	text-align: center;
+	margin: 10px;
+}
+
+
+
+
