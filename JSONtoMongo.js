@@ -10,11 +10,30 @@ var fs = require('fs'),
     config = require('./config');
 
 /* Connect to your database */
+mongoose.connect(config.db.uri, function(err) {
+    if (err) {
+        console.log('ERROR connecting to: ' + config.db.uri);
+    } else {
+        console.log('Successfully connected to: ' + config.db.uri)
+    }
+});
+
+var listings = require('./listings.json').entries;
+for (var i = 0; i < listings.length; i++) {
+    var item = Listing(listings[i]);
+    item.save(function (err) {
+        if (err) throw err;
+
+        console.log("Listing saved!");
+    });
+}
+
 
 /* 
   Instantiate a mongoose model for each listing object in the JSON file, 
   and then save it to your Mongo database 
  */
+
 
 
 /* 
