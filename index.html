@@ -63,9 +63,9 @@
 				<p>Address: {{detailedInfo.address}} </p>	 
           </div>
 		</div> 
-	</div>
+	
 	<div class="container" id="AddListingForm" ng-controller="ListingsController">
-		<div class="row">	
+		<div class="input-group col-lg-6">	
 			<div class="col-md-6">
 				<div>
 					<form ng-submit=addListing()><br>
@@ -75,10 +75,13 @@
 					<input ng-model="formlongitude" placeholder="Longitude" type="text" /><br>
 					<input ng-model="formaddress" placeholder="Address" type="text" /><br>
 					<input type="submit" value="Add Listing" />
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
+	
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
